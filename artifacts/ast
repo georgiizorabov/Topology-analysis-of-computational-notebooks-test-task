@@ -1,0 +1,79 @@
+graph {
+	0 [label=Module color=black shape=square style=unfilled]
+	1 [label="FunctionDef: go" color=black shape=square style=unfilled]
+	2 [label=arguments color=black shape=square style=unfilled]
+	1 -- 2
+	3 [label=Assign color=black shape=square style=unfilled]
+	4 [label="Name: l" color=Red shape=square style=filled]
+	5 [label=Store color=black shape=square style=unfilled]
+	4 -- 5
+	3 -- 4
+	6 [label=List color=black shape=square style=unfilled]
+	7 [label="Constant: 1" color=black shape=square style=unfilled]
+	6 -- 7
+	8 [label="Constant: 2" color=black shape=square style=unfilled]
+	6 -- 8
+	9 [label="Constant: 3" color=black shape=square style=unfilled]
+	6 -- 9
+	10 [label="Constant: 4" color=black shape=square style=unfilled]
+	6 -- 10
+	11 [label=Load color=black shape=square style=unfilled]
+	6 -- 11
+	3 -- 6
+	1 -- 3
+	12 [label=Assign color=black shape=square style=unfilled]
+	13 [label="Name: a" color=Orange shape=square style=filled]
+	14 [label=Store color=black shape=square style=unfilled]
+	13 -- 14
+	12 -- 13
+	15 [label="Constant: 1" color=black shape=square style=unfilled]
+	12 -- 15
+	1 -- 12
+	16 [label=Assign color=black shape=square style=unfilled]
+	17 [label="Name: b" color=Green shape=square style=filled]
+	18 [label=Store color=black shape=square style=unfilled]
+	17 -- 18
+	16 -- 17
+	19 [label="Constant: 2" color=black shape=square style=unfilled]
+	16 -- 19
+	1 -- 16
+	20 [label=Assign color=black shape=square style=unfilled]
+	21 [label="Name: c" color=Blue shape=square style=filled]
+	22 [label=Store color=black shape=square style=unfilled]
+	21 -- 22
+	20 -- 21
+	23 [label=BinOp color=black shape=square style=unfilled]
+	24 [label="Name: a" color=Orange shape=square style=filled]
+	25 [label=Load color=black shape=square style=unfilled]
+	24 -- 25
+	23 -- 24
+	26 [label=Add color=black shape=square style=unfilled]
+	23 -- 26
+	27 [label="Name: b" color=Green shape=square style=filled]
+	28 [label=Load color=black shape=square style=unfilled]
+	27 -- 28
+	23 -- 27
+	20 -- 23
+	1 -- 20
+	29 [label=For color=black shape=square style=unfilled]
+	30 [label="Name: i" color=Yellow shape=square style=filled]
+	31 [label=Store color=black shape=square style=unfilled]
+	30 -- 31
+	29 -- 30
+	32 [label="Name: l" color=Red shape=square style=filled]
+	33 [label=Load color=black shape=square style=unfilled]
+	32 -- 33
+	29 -- 32
+	34 [label=AugAssign color=black shape=square style=unfilled]
+	35 [label="Name: l" color=Red shape=square style=filled]
+	36 [label=Store color=black shape=square style=unfilled]
+	35 -- 36
+	34 -- 35
+	37 [label=Add color=black shape=square style=unfilled]
+	34 -- 37
+	38 [label="Constant: 1" color=black shape=square style=unfilled]
+	34 -- 38
+	29 -- 34
+	1 -- 29
+	0 -- 1
+}
